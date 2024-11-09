@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 8px;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem ;
+}
+
+.section__header {
+  font-size: 1rem;
+  font-weight: 6;
+ 
+  color: var(--text-dark);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  font-size: 1rem;
+  font-weight: 60;
+  color: var(--text-dark);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.link a {
+  font-weight: 50;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.link a:hover {
+  color: var(--primary-color);
+}
+
+.header__container {
+  padding: 1rem 1rem 5rem 1rem;
+}
+
+.header_image_container {
+  position: relative;
+  min-height: 50px;
+  background-image: linear-gradient(
+      to right,
+      rgba(44, 56, 85, 0.9),
+      rgba(100, 125, 187, 0.1)
+    ),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs78x4Y1J994QTDCK_4ZFXohJkY0n9m0lKmA&s");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+}
+
+.header__content {
+  max-width: 90px;
+ color: white;
+}
+
+
+
+
+.booking__container .btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.popular__grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+display: flex;
+margin-top: 15px;
+height: 110px;
+  gap: 0.5rem;
+}
+
+.popular__card {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.popular_card_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.popular_card_header h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.popular__content p {
+  color: var(--text-light);
+}
+
+.client {
+  background-color: var(--extra-light);
+  margin-top: 20px;
+}
+
+.client__grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.client__card {
+
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.client__card img {
+  max-width: 30px;
+  margin: auto;
+
+  border-radius: 100%;
+}
+
+.client__card p {
+  text-align: center;
+  color: var(--text-dark);
+}
+
+.reward__container {
+  /* padding: 2rem; */
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.reward__container p {
+  margin-bottom: 1rem;
+  font-weight: 60;
+  color: var(--text-light);
+}
+
+.reward__container h4 {
+  max-width: 100px;
+  margin: auto;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 60px;
+  color: var(--text-dark);
+}
+
+.reward__btn {
+padding: 0.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: blue;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reward__btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.footer {
+  background-color: var(--extra-light);
+width: 100%;
+
+ 
+}
+
+
+.footer__col h3 {
+  margin-bottom: 0.5rem;
+  font-size: 0.5rem;
+  font-weight: 60;
+  color: var(--text-dark);
+}
+
+.footer__col h4 {
+  margin-bottom: 0.5rem;
+  font-size: 0.5rem;
+  font-weight: 60;
+  color: var(--text-dark);
+}
+
+.footer__col p {
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+  cursor: pointer;
+  font-size: 0.5rem;
+  transition: 0.3s;
+}
+
+.footer__col p:hover {
+  color: var(--text-dark);
+}
+
+.footer__bar {
+  position: relative;
+
+  margin: auto;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 50;
+  color: var(--text-light);
+
+  overflow: hidden;
+}
+
+.footer__bar::before {
+  position: absolute;
+  content: "";
+  /* top: 50%;
+  right: 3rem; */
+  /* transform: translateY(-50%); */
+  
+  height: 2px;
+  background-color: var(--text-light);
+}
